@@ -9,7 +9,7 @@ $string = '{"pageCount":200,"category_id":"-1","startIndex":0}';
 $data = array('request'=> $string);
 $curl = curl_init();
 curl_setopt_array($curl, array(
-    CURLOPT_URL => "http://api.htvonline.com.vn/tv_channels",
+    CURLOPT_URL => "http://api.hvtonline.com.vn/tv_channels",
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => "",
     CURLOPT_MAXREDIRS => 10,
@@ -18,7 +18,7 @@ curl_setopt_array($curl, array(
     CURLOPT_CUSTOMREQUEST => "POST",
     CURLOPT_POSTFIELDS => http_build_query($data),
     CURLOPT_HTTPHEADER => array(
-        "authorization: Basic YXBpaGF5aGF5dHY6NDUlJDY2N0Bk",
+        "authorization: Basic YXBpaGF5aGF5dHY6NDUlJDY2N0Bk==",
         "user-agent: Apache-HttpClient/UNAVAILABLE (java 1.4)"
     ),
 ));
